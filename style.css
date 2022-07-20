@@ -106,17 +106,23 @@ body{
 
 /* footer section start  */
 footer{
-    height: 700px;
+    height: 200px;
     background-color: black;
     color: white;
-}
-footer > h1{
+    flex: 1;
     text-align: center;
+    padding: 70px;
+    line-height: 60px;
 }
+
 .foot-pa{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.social-icon{
+    font-size: 30px;
+    
+}
+.fa-linkedin{text-decoration: none;}
 /* footer section end  */
