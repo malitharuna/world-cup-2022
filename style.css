@@ -1,0 +1,46 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Universal style  */
+body{
+    background-color: floralwhite;
+    /* margin: 30px;
+    padding: 0; */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* banner style start  */
+.banner{
+    height: 650px;
+}
+.bg-color{
+    background-color: #9C0D39;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+}
+.banner-text{
+    padding: 80px;
+
+}
+.banner-head{
+    font-size: 50px;
+}
+.live-btn{
+    background-color: wheat ;
+    font-weight: bold;
+    padding:  10px 22px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.half-width{
+    width: 50%;
+    
+}
+
+
+
+
+/* banner style ends  */
