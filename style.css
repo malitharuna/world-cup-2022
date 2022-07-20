@@ -9,13 +9,12 @@
 }
 body{
     background-color: floralwhite;
-   
+
 }
 
 
 /* banner style start  */
  .banner{
-     /* height: 100vh; */
     width: 100%;
     margin-bottom: 80px; 
 } 
@@ -35,8 +34,9 @@ body{
     background-color: wheat ;
     font-weight: bold;
     padding:  10px 22px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 5px;
+    border: none;
       
 }
 .half-width{
@@ -47,8 +47,7 @@ body{
 /* Fixed and blogs section start  */
 
 .fx-and-blogs{
-    display: flex;
-    
+    display: flex; 
 }
 .fx-divv{
     background-color: black;
@@ -99,7 +98,14 @@ body{
   
 } 
 .view-all{
-    /* visibility: hidden; */
+  visibility: hidden;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 7px;
+  position: relative;
+  left: 600px;
 }
 
 /* Fixed and blogs section end  */
@@ -120,9 +126,55 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.foot-pa > p{
+    margin: 10px;
+}
 .social-icon{
     font-size: 30px;
     
 }
 .fa-linkedin{text-decoration: none;}
 /* footer section end  */
+
+/* media query  */
+
+/* Mobile View  */
+@media screen and (max-width:576px) {
+    .bg-color{
+        flex-direction: column;
+    }
+    .fx-and-blogs{
+        flex-direction: column; 
+    }
+    .fx-divv{
+       background-color: white;
+       
+    }
+    
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .foot-pa{
+        display: block;
+        line-height: 15px;
+    }
+}
+/* Tablet View  */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .fx-and-blogs{
+        flex-direction: column; 
+    }
+    .fx-divv{
+        background-color: white;
+        margin: 0 auto;
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foot-pa{
+        flex-wrap: wrap;
+        line-height: 15px;
+    }
+    
+}
